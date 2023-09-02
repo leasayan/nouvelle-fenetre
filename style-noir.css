@@ -1,0 +1,124 @@
+body {
+    background-color: rgba(27, 26, 26, 0.88);
+    color: rgb(174, 225, 176);
+    font-family:'Courier New', Courier, monospace;
+    margin: 20%;
+    font-size: xx-large;
+}
+
+a:hover {
+    background-color: rgb(174, 225, 176);
+    color: rgba(27, 26, 26, 0.88);
+}
+
+a {
+    color:rgb(69, 240, 60);
+}
+
+h1,h2,h3, h4 {
+    color: rgba(97, 209, 112, 0.818);
+    font-family: 'Courier New', Courier, monospace
+}
+
+h1 { 
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+.commentaire {
+    border:3px solid black;
+    border-radius: 10px;
+    font-size: 50%;
+    font-style: italic;
+    padding:5%
+}
+
+.intro {
+    font-size: 1rem;
+    font-style: italic;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    padding: 5% 0% ;
+    
+}
+
+.hover-photo {
+    display: inline;
+    pointer-events: auto;
+    cursor: pointer;
+    color:rgb(69, 240, 60);
+    text-decoration:underline dotted
+}
+  
+.hover-image {
+    display: none;
+  }
+  
+body:not(.mobile) .hover-photo:hover + .hover-image {
+    display: flex;
+    pointer-events: none;
+}
+  
+.hover-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Change width and height to scale images */
+    width: 95vw;
+    height: 95vh;
+}
+  
+.hover-image img {
+    max-width: 90% !important;
+    max-height: 90% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
+}
+
+/* 
+div {
+    height: 500px;
+    background-color: rgb(165, 165, 211);
+}
+/*
+
+/* Les tailles de police doivent être en REM */
+
+/* TO DO
+- Permettre des ouvertures de commentaires en popin ou hover
+
+- Idem pour des photos
+
+- Créer un "code visuel" souvenir / instant présent
+
+- Mettre les commentaires en italique + dash = ouvre une popin
+
+- Lien vers une page aléatoire en JS ? 
+
+- popin : besoin de mettre aussi des photos au hover de texte dans des popins + des ancres vers des popins (ouvertes sur la page d'où elles viennent)
+La solution ce n'est pas de faire des popins mais des entrées "commentaires" qu'on peut ouvrir ou refermer...
+
+- changer l'apparence des liens de navigation du header et du footer. Ils peuvent avoir la même class type lien.nav 
+
+- Mettre un picto maison sur le lien "début" et un picto "back" sur le lien "back"
+
+- Faire un favicon avec le logo du labs ? 
+*/
